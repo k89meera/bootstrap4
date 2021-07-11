@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tooltip</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  	<script>
+  		$(function(){
+  			// $('#example').tooltip({
+  			// 	html :true,
+  			// 	animation :false,
+  			// 	delay :{"show":100,"hide":100},
+  			// 	placement :"bottom",
+  			// 	title :"<img src='./e1.png'><h2>Tooltip Goes Here</h2>",
+  			// 	trigger :"click",
+  			// 	offset :"50"
+  			// });
+  			$("#showbtn").click(function(){
+  				$("#example").tooltip('show');
+  			});
+  			$("#hidebtn").click(function(){
+  				$("#example").tooltip('hide');
+  			});
+  		});
+  	</script>
+</head>
+<body>
+	<div class="container mb-5">
+		<h2 class="py-3 text-center">Tooltip</h2>
+		<div class="row py-3">
+			<div class="col-md-7 mx-auto">
+				<button class="btn btn-danger" data-placement="bottom" title="Tooltip Goes Here" data-toggle="tooltip">Tooltip</button>
+				<button class="btn btn-primary" data-placement="left" id="example" title :"<img src='./e1.png'><h2>Tooltip Goes Here</h2>",>Tooltip</button>
+				<button class="btn btn-danger" data-placement="right" title="Tooltip Goes Here" data-toggle="tooltip">Tooltip</button>
+				
+			</div>
+
+		</div>
+		
+	</div>
+
+</body>
+</html>
